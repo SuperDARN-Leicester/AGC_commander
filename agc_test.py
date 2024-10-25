@@ -1,7 +1,7 @@
 # AGC commander for python
 # by Cassie Lakin
-# September  11th 2022
-
+# October 25th 2024
+# This version is not to be used on site in finland as it has a logging feature for monitoring whilst testing
 
 from PyQt5.QtWidgets import QApplication, QPushButton, QMainWindow, QLabel, \
     QComboBox, QCheckBox, QLCDNumber
