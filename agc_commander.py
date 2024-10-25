@@ -2,7 +2,7 @@
 # AGC commander for python
 # by Cassie Lakin
 # September  11th 2022
-
+# This version is for use on site in Finland. It has no logging which is done by another script on site
 
 from PyQt5.QtWidgets import QApplication, QPushButton, QMainWindow, QLabel, \
     QComboBox, QCheckBox, QLCDNumber
@@ -14,10 +14,7 @@ import serial
 import pandas as pd
 import time
 
-# sets up serial for RS485
-# ser = serial.Serial('/dev/ttyUSB0') # For use on test rig lead
 ser = serial.Serial('/dev/ttyS0')     # For use in field
-#ser = serial.Serial('com1')          # For use on PC
 ser.baudrate = 9600
 ser.bytesize = 8
 ser.parity = 'N'
