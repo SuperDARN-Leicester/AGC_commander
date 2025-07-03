@@ -30,7 +30,7 @@ ser.timeout = 1
 
 # This is the main packet. It will change depending on commands.
 packet_to_send = bytearray([0x55, 0x01, 0x01, 0x01, 0x03])
-radar_position = pd.read_csv("antenna_positions.csv")
+radar_position = pd.read_csv("/home/radar/UOL_scripts/AGC_commander/antenna_positions.csv")
 
 
 # Setting up the User interface
