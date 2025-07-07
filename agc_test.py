@@ -40,7 +40,7 @@ log_file.write("AGC Commander Log file.   Start Time: ")
 log_file.write(str(formatted_time))
 start_time = datetime.now()
 log_file.close()
-radar_position = pd.read_csv("antenna_positions.csv")
+radar_position = pd.read_csv("/home/radar/UOL_scripts/Antenna_Positions_CSV/antenna_positions.csv")
 
 
 # Setting up the User interface
